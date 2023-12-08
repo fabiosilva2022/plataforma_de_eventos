@@ -1,0 +1,14 @@
+.listCard {
+    display:inline-flex;
+    flex-wrap: wrap;
+    flex-direction:unset;
+    justify-content:center;
+
+    
+
+}
+
+.listCard > div {
+    
+    height: 300;
+}

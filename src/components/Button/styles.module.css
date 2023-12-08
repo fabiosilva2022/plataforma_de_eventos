@@ -1,0 +1,162 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-family: var(--fontPrimary);
+    font-size: var(--fontSizeMedium);
+    font-weight: var(--buttonFontWeight);
+    padding: var(--buttonPadding);
+    margin-right: var(--buttonMarginRight);
+    border-radius: var(--buttonBorderRadius);
+    border: var(--buttonBorder);
+    color: var(--white);
+    background-color: var(--primary);
+    cursor: pointer;
+    /* TODO: adicionar estilo para foco do botão*/
+  
+    > img {
+      width: 16px;
+      height: 16px;
+    }
+  
+    &:hover {
+      background-color: var(--primaryDark);
+      border-color: var(--primaryDark);
+    }
+    
+    &:disabled{
+      cursor: not-allowed;
+      /*TODO: adicionar estilo "cinzento" para o botão desabilitado*/
+    }
+  }
+  
+  .outline {
+    background-color: var(--white);
+    color: var(--primary);
+    border: var(--buttonBorder);
+  
+    &:hover {
+      color: var(--white);
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+  }
+  
+  .info {
+    background-color: var(--blue);
+    border: var(--buttonBorder);
+    border-color: var(--blue);
+  
+    &:hover {
+      background-color: var(--darkblue);
+      border-color: var(--darkblue);
+    }
+  }
+  
+  .outlineInfo {
+    background-color: var(--white);
+    color: var(--blue);
+    border: var(--buttonBorder);
+    border-color: var(--blue);
+  
+    &:hover {
+      color: var(--white);
+      background-color: var(--blue);
+      border-color: var(--blue);
+    }
+  }
+  
+  .danger {
+    background-color: var(--red);
+    border: var(--buttonBorder);
+    border-color: var(--red);
+  
+    &:hover {
+      background-color: var(--darkred);
+      border-color: var(--darkred);
+    }
+  }
+  
+  .outlineDanger {
+    background-color: var(--white);
+    color: var(--red);
+    border: var(--buttonBorder);
+    border-color: var(--red);
+  
+    &:hover {
+      color: var(--white);
+      background-color: var(--red);
+      border-color: var(--red);
+    }
+  }
+  
+  .warning {
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    border: var(--buttonBorder);
+    border-color: var(--yellow);
+    color: var(--black);
+  
+    &:hover {
+      background-color: var(--darkyellow);
+      border-color: var(--darkyellow);
+    }
+  }
+  
+  .outlineWarning {
+    background-color: var(--white);
+    color: var(--yellow);
+    border: var(--buttonBorder);
+    border-color: var(--yellow);
+  
+    &:hover {
+      color: var(--black);
+      background-color: var(--yellow);
+      border-color: var(--yellow);
+    }
+  }
+  
+  .success {
+    background-color: var(--green);
+    border: var(--buttonBorder);
+    border-color: var(--green);
+  
+    &:hover {
+      background-color: var(--darkgreen);
+      border-color: var(--darkgreen);
+    }
+  }
+  
+  .outlineSuccess {
+    background-color: var(--white);
+    color: var(--green);
+    border: var(--buttonBorder);
+    border-color: var(--green);
+  
+    &:hover {
+      color: var(--white);
+      background-color: var(--green);
+      border-color: var(--green);
+    }
+  }
+  
+  .small {
+    padding: var(--buttonSmallPadding);
+    font-size: var(--fontSizeSmall);
+  
+    > img {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  
+  .large {
+    padding: var(--buttonLargePadding);
+    font-size: var(--fontSizeLarge);
+  
+    > img {
+      width: 24px;
+      height: 24px;
+    }
+  }
